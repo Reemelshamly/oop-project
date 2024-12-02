@@ -1,7 +1,7 @@
 
 
 public class Lawyer extends Person {
-    private int lawyerId;
+    private int lawyerId; //lawyerId is unique;
     private String specilization;
     private int experinceYears;
     private boolean availability;
