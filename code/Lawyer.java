@@ -1,31 +1,24 @@
 
 
-public class Lawyer {
-    private int LawyerId;
-    private String name ;
+public class Lawyer extends Person {
+    private int lawyerId; //lawyerId is unique;
     private String specilization;
     private int experinceYears;
     private boolean availability;
-    public Lawyer(int lawyerId, String name, String specilization, int experinceYears, boolean availability) {
+    public Lawyer(int lawyerId, String specilization, int experinceYears, boolean availability) {
         super();
-        LawyerId = lawyerId;
-        this.name = name;
+        this.lawyerId = lawyerId;
         this.specilization = specilization;
         this.experinceYears = experinceYears;
         this.availability = availability;
     }
     public int getLawyerId() {
-        return LawyerId;
+        return lawyerId;
     }
     public void setLawyerId(int lawyerId) {
         LawyerId = lawyerId;
     }
-    public String getName() {
-        return name;
-    }
-    public void setName(String name) {
-        this.name = name;
-    }
+
     public String getSpecilization() {
         return specilization;
     }
